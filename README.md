@@ -1,7 +1,4 @@
-# myblog
-
-chlsix's blog
-
+# chlsix's blog
 
 使用 GitHub + Jekyll打造自己的博客
 
