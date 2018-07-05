@@ -1,5 +1,63 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/myblog/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/myblog/" rel="alternate" type="text/html" /><updated>2018-07-05T15:22:51+08:00</updated><id>http://localhost:4000/myblog/</id><title type="html">chlsix’s Blog</title><subtitle>不徐不疾，不烦不燥，得不足喜，失不足忧</subtitle><author><name>chlsix</name></author><entry><title type="html">我的第一篇文章</title><link href="http://localhost:4000/myblog/test/2018/07/05/hello-world/" rel="alternate" type="text/html" title="我的第一篇文章" /><published>2018-07-05T00:00:00+08:00</published><updated>2018-07-05T00:00:00+08:00</updated><id>http://localhost:4000/myblog/test/2018/07/05/hello-world</id><content type="html" xml:base="http://localhost:4000/myblog/test/2018/07/05/hello-world/">&lt;h2&gt;我的第一篇文章&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/myblog/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/myblog/" rel="alternate" type="text/html" /><updated>2018-07-05T22:51:15+08:00</updated><id>http://localhost:4000/myblog/</id><title type="html">chlsix’s Blog</title><subtitle>不徐不疾，不烦不燥，得不足喜，失不足忧</subtitle><author><name>chlsix</name></author><entry><title type="html">Mac上解压缩方案</title><link href="http://localhost:4000/myblog/mac/2018/04/06/Mac%E4%B8%8A%E8%A7%A3%E5%8E%8B%E5%92%8C%E5%8E%8B%E7%BC%A9%E6%96%B9%E6%A1%88/" rel="alternate" type="text/html" title="Mac上解压缩方案" /><published>2018-04-06T00:00:00+08:00</published><updated>2018-04-06T00:00:00+08:00</updated><id>http://localhost:4000/myblog/mac/2018/04/06/Mac%E4%B8%8A%E8%A7%A3%E5%8E%8B%E5%92%8C%E5%8E%8B%E7%BC%A9%E6%96%B9%E6%A1%88</id><content type="html" xml:base="http://localhost:4000/myblog/mac/2018/04/06/Mac%E4%B8%8A%E8%A7%A3%E5%8E%8B%E5%92%8C%E5%8E%8B%E7%BC%A9%E6%96%B9%E6%A1%88/">&lt;p&gt;Mac自带的归档实用工具功能有限，只支持.zip格式的文件。本文将介绍三款解压缩软件，配合使用基本上能解决90%Mac上解压和压缩问题&lt;/p&gt;
 
-&lt;p&gt;我的第一篇文章&lt;/p&gt;
+&lt;ul id=&quot;markdown-toc&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#mac上解压和压缩方案&quot; id=&quot;markdown-toc-mac上解压和压缩方案&quot;&gt;Mac上解压和压缩方案&lt;/a&gt;    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#the-unarchiver&quot; id=&quot;markdown-toc-the-unarchiver&quot;&gt;The Unarchiver&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#dr-unarchiver&quot; id=&quot;markdown-toc-dr-unarchiver&quot;&gt;Dr. Unarchiver&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#keka&quot; id=&quot;markdown-toc-keka&quot;&gt;keka&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#最后&quot; id=&quot;markdown-toc-最后&quot;&gt;最后&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;05 Jul 2018&lt;/p&gt;</content><author><name>chlsix</name></author><summary type="html">我的第一篇文章</summary></entry></feed>
+&lt;h1 id=&quot;mac上解压和压缩方案&quot;&gt;Mac上解压和压缩方案&lt;/h1&gt;
+&lt;p&gt;推荐软件&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://itunes.apple.com/cn/app/the-unarchiver/id425424353?mt=12&quot;&gt;The Unarchiver&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://itunes.apple.com/cn/app/%E5%85%A8%E8%83%BD%E8%A7%A3%E5%8E%8B-%E8%B7%A8%E5%B9%B3%E5%8F%B0%E6%94%AF%E6%8C%81-%E9%80%9F%E5%BA%A6%E8%B6%85%E5%BF%AB-%E5%B0%8F%E4%BC%99%E4%BC%B4%E4%BB%AC%E9%83%BD%E5%9C%A8%E7%94%A8/id1127253508?mt=12&quot;&gt;Dr. Unarchiver&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.kekaosx.com/en/&quot;&gt;keka&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;the-unarchiver&quot;&gt;The Unarchiver&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://ws1.sinaimg.cn/large/006tNbRwgy1fq2wscrqluj30sg0sgttt.jpg&quot; alt=&quot;The Unarchiver&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The Unarchiver是mac上首选的解压软件，功能强大而且免费，支持的格式很多，基本上常见的格式都支持&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://ws1.sinaimg.cn/large/006tNbRwgy1fq2xk3izu0j30zo11cag1.jpg&quot; alt=&quot;支持的格式&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;dr-unarchiver&quot;&gt;Dr. Unarchiver&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://ws3.sinaimg.cn/large/006tNbRwgy1fq2xu16f5ij30sg0sg40e.jpg&quot; alt=&quot;Dr. Unarchiver&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Dr. Unarchiver最大的特点就是支持解压前的预览功能和可以选择部分文件解压&lt;/p&gt;
+
+&lt;p&gt;mac自带的解压工具和很多其他的解压软件只支持直接全部解压压缩包，并不能预览压缩包文件和选择部分文件解压，而Dr. Unarchiver支持&lt;/p&gt;
+
+&lt;p&gt;Dr. Unarchiver是免费软件，内部会有其他软件的推广，可以无视&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://ws1.sinaimg.cn/large/006tNbRwgy1fq2xk5sv3lj31ac0to422.jpg&quot; alt=&quot;解压预览&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;keka&quot;&gt;keka&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://ws4.sinaimg.cn/large/006tNbRwgy1fq2xk4rj2sj30sg0sggqa.jpg&quot; alt=&quot;Keka&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;虽然keka的图标很丑😂，但是功能很强大，不仅可以解压还可以压缩文件&lt;/p&gt;
+
+&lt;p&gt;keka还有一个很实用的功能，当我们在mac压缩文件给windows的时候，windows上面解压会有mac资源文件(__MACOSX, .DS_Store)，keka可以选择在压缩的时候排除掉这些文件&lt;/p&gt;
+
+&lt;p&gt;压缩方法：将需要压缩的文件拖进keka就可以了&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://ws2.sinaimg.cn/large/006tNbRwgy1fq2xu25xozj30ow0ty0v4.jpg&quot; alt=&quot;keka压缩&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;keka在AppStore上的价格是¥12.00，但是在官网上的是免费的&lt;/p&gt;
+
+&lt;h2 id=&quot;最后&quot;&gt;最后&lt;/h2&gt;
+
+&lt;p&gt;还是下载地址&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;https://itunes.apple.com/cn/app/the-unarchiver/id425424353?mt=12&quot;&gt;The Unarchiver&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://itunes.apple.com/cn/app/%E5%85%A8%E8%83%BD%E8%A7%A3%E5%8E%8B-%E8%B7%A8%E5%B9%B3%E5%8F%B0%E6%94%AF%E6%8C%81-%E9%80%9F%E5%BA%A6%E8%B6%85%E5%BF%AB-%E5%B0%8F%E4%BC%99%E4%BC%B4%E4%BB%AC%E9%83%BD%E5%9C%A8%E7%94%A8/id1127253508?mt=12&quot;&gt;Dr. Unarchiver&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.kekaosx.com/en/&quot;&gt;keka&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>chlsix</name></author><category term="效率工具" /><summary type="html">Mac自带的归档实用工具功能有限，只支持.zip格式的文件。本文将介绍三款解压缩软件，配合使用基本上能解决90%Mac上解压和压缩问题</summary></entry></feed>
