@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+    <entry>
+      <title><![CDATA[我的第一篇文章]]></title>
+      <url>/myblog/test/2018/07/05/hello-world/</url>
+      <content type="text"><![CDATA[我的第一篇文章我的第一篇文章05 Jul 2018]]></content>
+      <categories>
+        
+          <category> test </category>
+        
+      </categories>
+      <tags>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
+</search>
