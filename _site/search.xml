@@ -18,4 +18,21 @@
       <tags></tags>
     </entry>
   
+    <entry>
+      <title><![CDATA[iOS开发-AppIcon和LaunchImage]]></title>
+      <url>/myblog/ios/2016/04/01/iOS%E5%BC%80%E5%8F%91-AppIcon%E5%92%8CLaunchImage/</url>
+      <content type="text"><![CDATA[引言对于一款App，图标和启动图是必不可少。好看的图标和启动图会更加地吸引用户，能增加点击量和下载量，为你的App大大的加分。而且启动图设置是有尺寸要求的，系统会根据启动图，辨别适配的是哪个机型。设置AppIcon1. AppIcon尺寸AppIcon有多种尺寸，下面仅列出iPhone上常用的尺寸，ipad等其他设备的尺寸，请自行查看官方文档2. 添加AppIcon在General中启用AppIcon右边栏中可以选择要添加的类型，一般选择iPhone一项中的iOS7.0andLater即可把图片拖入相应位置，这样就设置好了AppIcon，重新编译运行就能看到图标了。小技巧：一般图标都是让美工提供，如果美工比较忙的的话，可以只提供一张1024*1024的图片，我们可以自己生成。生成地址:图标工场生成之后下载，会到的所需要的所有尺寸可以直接将AppIcon.appiconset文件夹直接导入Assets.xcassets中使用，但由于很多尺寸用不上，建议还是导入必须的图片就可以了。设置LaunchImage1. LaunchImage尺寸常用尺寸iPhone 6Plus/6SPlus(Retina HD 5.5 @3x): 1242 x 2208 iPhone 6/6S/(Retina HD 4.7 @2x): 750 x 1334iPhone 5/5S(Retina 4 @2x): 640 x 1136iPhone 4/4S(@2x): 640 x 9602. 添加LaunchImage在Assets.xcassets中添加LaunchImage同样在右边栏可以选择要添加的类型把图片拖入相应位置启用LaunchImage禁止使用LaunchScreen.storyboard，如果不禁止即使设置了LaunchImage也不会有效果，加载的还是空白的LaunchScreen.storyboard重新编译运行就能看到启动图画面了。更多内容请查看官方文档]]></content>
+      <categories>
+        
+          <category> iOS </category>
+        
+      </categories>
+      <tags>
+        
+          <tag> iOS开发 </tag>
+        
+      </tags>
+      <tags></tags>
+    </entry>
+  
 </search>

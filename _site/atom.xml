@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/myblog/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/myblog/" rel="alternate" type="text/html" /><updated>2018-07-05T22:51:15+08:00</updated><id>http://localhost:4000/myblog/</id><title type="html">chlsix’s Blog</title><subtitle>不徐不疾，不烦不燥，得不足喜，失不足忧</subtitle><author><name>chlsix</name></author><entry><title type="html">Mac上解压缩方案</title><link href="http://localhost:4000/myblog/mac/2018/04/06/Mac%E4%B8%8A%E8%A7%A3%E5%8E%8B%E5%92%8C%E5%8E%8B%E7%BC%A9%E6%96%B9%E6%A1%88/" rel="alternate" type="text/html" title="Mac上解压缩方案" /><published>2018-04-06T00:00:00+08:00</published><updated>2018-04-06T00:00:00+08:00</updated><id>http://localhost:4000/myblog/mac/2018/04/06/Mac%E4%B8%8A%E8%A7%A3%E5%8E%8B%E5%92%8C%E5%8E%8B%E7%BC%A9%E6%96%B9%E6%A1%88</id><content type="html" xml:base="http://localhost:4000/myblog/mac/2018/04/06/Mac%E4%B8%8A%E8%A7%A3%E5%8E%8B%E5%92%8C%E5%8E%8B%E7%BC%A9%E6%96%B9%E6%A1%88/">&lt;p&gt;Mac自带的归档实用工具功能有限，只支持.zip格式的文件。本文将介绍三款解压缩软件，配合使用基本上能解决90%Mac上解压和压缩问题&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.5.2">Jekyll</generator><link href="http://localhost:4000/myblog/atom.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/myblog/" rel="alternate" type="text/html" /><updated>2018-07-06T20:23:49+08:00</updated><id>http://localhost:4000/myblog/</id><title type="html">chlsix’s Blog</title><subtitle>不徐不疾，不烦不燥，得不足喜，失不足忧</subtitle><author><name>chlsix</name></author><entry><title type="html">Mac上解压缩方案</title><link href="http://localhost:4000/myblog/mac/2018/04/06/Mac%E4%B8%8A%E8%A7%A3%E5%8E%8B%E5%92%8C%E5%8E%8B%E7%BC%A9%E6%96%B9%E6%A1%88/" rel="alternate" type="text/html" title="Mac上解压缩方案" /><published>2018-04-06T00:00:00+08:00</published><updated>2018-04-06T00:00:00+08:00</updated><id>http://localhost:4000/myblog/mac/2018/04/06/Mac%E4%B8%8A%E8%A7%A3%E5%8E%8B%E5%92%8C%E5%8E%8B%E7%BC%A9%E6%96%B9%E6%A1%88</id><content type="html" xml:base="http://localhost:4000/myblog/mac/2018/04/06/Mac%E4%B8%8A%E8%A7%A3%E5%8E%8B%E5%92%8C%E5%8E%8B%E7%BC%A9%E6%96%B9%E6%A1%88/">&lt;p&gt;Mac自带的归档实用工具功能有限，只支持.zip格式的文件。本文将介绍三款解压缩软件，配合使用基本上能解决90%Mac上解压和压缩问题&lt;/p&gt;
 
 &lt;ul id=&quot;markdown-toc&quot;&gt;
   &lt;li&gt;&lt;a href=&quot;#mac上解压和压缩方案&quot; id=&quot;markdown-toc-mac上解压和压缩方案&quot;&gt;Mac上解压和压缩方案&lt;/a&gt;    &lt;ul&gt;
@@ -60,4 +60,75 @@
   &lt;li&gt;&lt;a href=&quot;https://itunes.apple.com/cn/app/the-unarchiver/id425424353?mt=12&quot;&gt;The Unarchiver&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://itunes.apple.com/cn/app/%E5%85%A8%E8%83%BD%E8%A7%A3%E5%8E%8B-%E8%B7%A8%E5%B9%B3%E5%8F%B0%E6%94%AF%E6%8C%81-%E9%80%9F%E5%BA%A6%E8%B6%85%E5%BF%AB-%E5%B0%8F%E4%BC%99%E4%BC%B4%E4%BB%AC%E9%83%BD%E5%9C%A8%E7%94%A8/id1127253508?mt=12&quot;&gt;Dr. Unarchiver&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;http://www.kekaosx.com/en/&quot;&gt;keka&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>chlsix</name></author><category term="效率工具" /><summary type="html">Mac自带的归档实用工具功能有限，只支持.zip格式的文件。本文将介绍三款解压缩软件，配合使用基本上能解决90%Mac上解压和压缩问题</summary></entry></feed>
+&lt;/ol&gt;</content><author><name>chlsix</name></author><category term="效率工具" /><summary type="html">Mac自带的归档实用工具功能有限，只支持.zip格式的文件。本文将介绍三款解压缩软件，配合使用基本上能解决90%Mac上解压和压缩问题</summary></entry><entry><title type="html">iOS开发-AppIcon和LaunchImage</title><link href="http://localhost:4000/myblog/ios/2016/04/01/iOS%E5%BC%80%E5%8F%91-AppIcon%E5%92%8CLaunchImage/" rel="alternate" type="text/html" title="iOS开发-AppIcon和LaunchImage" /><published>2016-04-01T00:00:00+08:00</published><updated>2016-04-01T00:00:00+08:00</updated><id>http://localhost:4000/myblog/ios/2016/04/01/iOS%E5%BC%80%E5%8F%91-AppIcon%E5%92%8CLaunchImage</id><content type="html" xml:base="http://localhost:4000/myblog/ios/2016/04/01/iOS%E5%BC%80%E5%8F%91-AppIcon%E5%92%8CLaunchImage/">&lt;h1 id=&quot;引言&quot;&gt;引言&lt;/h1&gt;
+&lt;p&gt;对于一款App，图标和启动图是必不可少。好看的图标和启动图会更加地吸引用户，能增加点击量和下载量，为你的App大大的加分。而且启动图设置是有尺寸要求的，系统会根据启动图，辨别适配的是哪个机型。&lt;/p&gt;
+
+&lt;h1 id=&quot;设置appicon&quot;&gt;设置AppIcon&lt;/h1&gt;
+
+&lt;h2 id=&quot;1-appicon尺寸&quot;&gt;1. AppIcon尺寸&lt;/h2&gt;
+&lt;p&gt;AppIcon有多种尺寸，下面仅列出iPhone上常用的尺寸，ipad等其他设备的尺寸，请自行查看&lt;a href=&quot;https://developer.apple.com/library/ios/qa/qa1686/_index.html&quot;&gt;官方文档&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/679533-a4c0d3efc0d28768.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;iPhone图标尺寸&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;2-添加appicon&quot;&gt;2. 添加AppIcon&lt;/h2&gt;
+
+&lt;p&gt;在General中启用AppIcon&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/679533-a5f6155208022326.gif?imageMogr2/auto-orient/strip&quot; alt=&quot;启用AppIcon.gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;右边栏中可以选择要添加的类型，一般选择iPhone一项中的iOS7.0andLater即可&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/679533-9416dcfe2802762d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;可选的类型.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;把图片拖入相应位置，这样就设置好了AppIcon，重新编译运行就能看到图标了。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/679533-ff6cefe1daf1ff56.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;拖入图片之前.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/679533-5237df39abd8c4cd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;拖入图片之后.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;小技巧&lt;/strong&gt;：一般图标都是让美工提供，如果美工比较忙的的话，可以只提供一张1024*1024的图片，我们可以自己生成。生成地址:&lt;a href=&quot;http://icon.wuruihong.com/&quot;&gt;图标工场&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;生成之后下载，会到的所需要的所有尺寸&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/679533-c972e74a7eb4236c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;文件夹内容.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;可以直接将AppIcon.appiconset文件夹直接导入Assets.xcassets中使用，但由于很多尺寸用不上，建议还是导入必须的图片就可以了。&lt;/p&gt;
+
+&lt;h1 id=&quot;设置launchimage&quot;&gt;设置LaunchImage&lt;/h1&gt;
+
+&lt;h2 id=&quot;1-launchimage尺寸&quot;&gt;1. LaunchImage尺寸&lt;/h2&gt;
+
+&lt;p&gt;常用尺寸&lt;/p&gt;
+
+&lt;p&gt;iPhone 6Plus/6SPlus(Retina HD 5.5 @3x): 1242 x 2208 
+iPhone 6/6S/(Retina HD 4.7 @2x): 750 x 1334
+iPhone 5/5S(Retina 4 @2x): 640 x 1136
+iPhone 4/4S(@2x): 640 x 960&lt;/p&gt;
+
+&lt;h2 id=&quot;2-添加launchimage&quot;&gt;2. 添加LaunchImage&lt;/h2&gt;
+
+&lt;p&gt;在Assets.xcassets中添加LaunchImage&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/679533-33c8c9bc997a845c.gif?imageMogr2/auto-orient/strip&quot; alt=&quot;添加LaunchImage.gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;同样在右边栏可以选择要添加的类型&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/679533-53d285a1475fe1c1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;可选类型.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;把图片拖入相应位置&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/679533-0eb2d4d8e1896319.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;拖入前.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/679533-adc1d4021a4672e6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240&quot; alt=&quot;拖入后.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;启用LaunchImage&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/679533-3b609c05b91bc305.gif?imageMogr2/auto-orient/strip&quot; alt=&quot;启用LaunchImage.gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;禁止使用LaunchScreen.storyboard，如果不禁止即使设置了LaunchImage也不会有效果，加载的还是空白的LaunchScreen.storyboard&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://upload-images.jianshu.io/upload_images/679533-dde37fd00d324f8c.gif?imageMogr2/auto-orient/strip&quot; alt=&quot;禁用LaunchScreen.gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;重新编译运行就能看到启动图画面了。&lt;/p&gt;
+
+&lt;p&gt;更多内容请查看&lt;a href=&quot;https://developer.apple.com/library/ios/recipes/xcode_help-image_catalog-1.0/chapters/Recipe.html#//apple_ref/doc/uid/TP40013303-CH1-SW1&quot;&gt;官方文档&lt;/a&gt;&lt;/p&gt;</content><author><name>chlsix</name></author><category term="iOS开发" /><summary type="html">引言 对于一款App，图标和启动图是必不可少。好看的图标和启动图会更加地吸引用户，能增加点击量和下载量，为你的App大大的加分。而且启动图设置是有尺寸要求的，系统会根据启动图，辨别适配的是哪个机型。</summary></entry></feed>
