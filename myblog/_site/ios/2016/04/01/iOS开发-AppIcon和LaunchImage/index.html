@@ -1,0 +1,920 @@
+
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/myblog/assets/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/myblog/assets/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/myblog/assets/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="iOS开发," />
+
+
+
+
+
+  <link rel="alternate" href="/myblog/atom.xml" title="chlsix's Blog" type="application/atom+xml" />
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/myblog/assets/favicon.ico?v=5.1.1" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="引言 对于一款App，图标和启动图是必不可少。好看的图标和启动图会更加地吸引用户，能增加点击量和下载量，为你的App大大的加分。而且启动图设置是有尺寸要求的，系统会根据启动图，辨别适配的是哪个机型。">
+<meta name="keywords" content="iOS开发">
+<meta property="og:type" content="article">
+<meta property="og:title" content="iOS开发-AppIcon和LaunchImage">
+<meta property="og:url" content="http://localhost:4000/myblog/ios/2016/04/01/iOS%E5%BC%80%E5%8F%91-AppIcon%E5%92%8CLaunchImage/">
+<meta property="og:site_name" content="chlsix's Blog">
+<meta property="og:description" content="引言 对于一款App，图标和启动图是必不可少。好看的图标和启动图会更加地吸引用户，能增加点击量和下载量，为你的App大大的加分。而且启动图设置是有尺寸要求的，系统会根据启动图，辨别适配的是哪个机型。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/679533-a4c0d3efc0d28768.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/679533-a5f6155208022326.gif?imageMogr2/auto-orient/strip">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/679533-9416dcfe2802762d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/679533-ff6cefe1daf1ff56.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/679533-5237df39abd8c4cd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/679533-c972e74a7eb4236c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/679533-33c8c9bc997a845c.gif?imageMogr2/auto-orient/strip">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/679533-53d285a1475fe1c1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/679533-0eb2d4d8e1896319.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/679533-adc1d4021a4672e6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/679533-3b609c05b91bc305.gif?imageMogr2/auto-orient/strip">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/679533-dde37fd00d324f8c.gif?imageMogr2/auto-orient/strip">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="iOS开发-AppIcon和LaunchImage">
+<meta name="twitter:description" content="引言 对于一款App，图标和启动图是必不可少。好看的图标和启动图会更加地吸引用户，能增加点击量和下载量，为你的App大大的加分。而且启动图设置是有尺寸要求的，系统会根据启动图，辨别适配的是哪个机型。">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/679533-a4c0d3efc0d28768.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/myblog',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://localhost:4000/myblog"/>
+
+
+
+
+
+  <title>iOS开发-AppIcon和LaunchImage | chlsix's Blog</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"> <div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/myblog/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">chlsix's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+        <li class="menu-item menu-item-home">
+          <a href="/myblog/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/myblog/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/myblog/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+<div id="posts" class="posts-expand">
+  
+  
+
+  
+
+  
+  
+  
+
+  <article class="post post-type- " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://localhost:4000/myblog/ios/2016/04/01/iOS%E5%BC%80%E5%8F%91-AppIcon%E5%92%8CLaunchImage/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="chlsix">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/assets/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="chlsix's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+          
+          
+            iOS开发-AppIcon和LaunchImage
+          
+        </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-04-01T00:00:00+08:00">
+                2016-04-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/myblog/category/#/iOS" itemprop="url" rel="index">
+                    <span itemprop="name">iOS</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+            
+                <div class="post-description">
+                    
+                </div>
+            
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <h1 id="引言">引言</h1>
+<p>对于一款App，图标和启动图是必不可少。好看的图标和启动图会更加地吸引用户，能增加点击量和下载量，为你的App大大的加分。而且启动图设置是有尺寸要求的，系统会根据启动图，辨别适配的是哪个机型。</p>
+
+<h1 id="设置appicon">设置AppIcon</h1>
+
+<h2 id="1-appicon尺寸">1. AppIcon尺寸</h2>
+<p>AppIcon有多种尺寸，下面仅列出iPhone上常用的尺寸，ipad等其他设备的尺寸，请自行查看<a href="https://developer.apple.com/library/ios/qa/qa1686/_index.html">官方文档</a></p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/679533-a4c0d3efc0d28768.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="iPhone图标尺寸" /></p>
+
+<h2 id="2-添加appicon">2. 添加AppIcon</h2>
+
+<p>在General中启用AppIcon</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/679533-a5f6155208022326.gif?imageMogr2/auto-orient/strip" alt="启用AppIcon.gif" /></p>
+
+<p>右边栏中可以选择要添加的类型，一般选择iPhone一项中的iOS7.0andLater即可</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/679533-9416dcfe2802762d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="可选的类型.png" /></p>
+
+<p>把图片拖入相应位置，这样就设置好了AppIcon，重新编译运行就能看到图标了。</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/679533-ff6cefe1daf1ff56.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="拖入图片之前.png" /></p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/679533-5237df39abd8c4cd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="拖入图片之后.png" /></p>
+
+<p><strong>小技巧</strong>：一般图标都是让美工提供，如果美工比较忙的的话，可以只提供一张1024*1024的图片，我们可以自己生成。生成地址:<a href="http://icon.wuruihong.com/">图标工场</a></p>
+
+<p>生成之后下载，会到的所需要的所有尺寸</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/679533-c972e74a7eb4236c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="文件夹内容.png" /></p>
+
+<p>可以直接将AppIcon.appiconset文件夹直接导入Assets.xcassets中使用，但由于很多尺寸用不上，建议还是导入必须的图片就可以了。</p>
+
+<h1 id="设置launchimage">设置LaunchImage</h1>
+
+<h2 id="1-launchimage尺寸">1. LaunchImage尺寸</h2>
+
+<p>常用尺寸</p>
+
+<p>iPhone 6Plus/6SPlus(Retina HD 5.5 @3x): 1242 x 2208 
+iPhone 6/6S/(Retina HD 4.7 @2x): 750 x 1334
+iPhone 5/5S(Retina 4 @2x): 640 x 1136
+iPhone 4/4S(@2x): 640 x 960</p>
+
+<h2 id="2-添加launchimage">2. 添加LaunchImage</h2>
+
+<p>在Assets.xcassets中添加LaunchImage</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/679533-33c8c9bc997a845c.gif?imageMogr2/auto-orient/strip" alt="添加LaunchImage.gif" /></p>
+
+<p>同样在右边栏可以选择要添加的类型</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/679533-53d285a1475fe1c1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="可选类型.png" /></p>
+
+<p>把图片拖入相应位置</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/679533-0eb2d4d8e1896319.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="拖入前.png" /></p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/679533-adc1d4021a4672e6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="拖入后.png" /></p>
+
+<p>启用LaunchImage</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/679533-3b609c05b91bc305.gif?imageMogr2/auto-orient/strip" alt="启用LaunchImage.gif" /></p>
+
+<p>禁止使用LaunchScreen.storyboard，如果不禁止即使设置了LaunchImage也不会有效果，加载的还是空白的LaunchScreen.storyboard</p>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/679533-dde37fd00d324f8c.gif?imageMogr2/auto-orient/strip" alt="禁用LaunchScreen.gif" /></p>
+
+<p>重新编译运行就能看到启动图画面了。</p>
+
+<p>更多内容请查看<a href="https://developer.apple.com/library/ios/recipes/xcode_help-image_catalog-1.0/chapters/Recipe.html#//apple_ref/doc/uid/TP40013303-CH1-SW1">官方文档</a></p>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            
+            <a href="/myblog/tag/#/iOS%E5%BC%80%E5%8F%91" rel="tag"># iOS开发</a>
+          
+        </div>
+      
+
+      
+      
+      
+      
+      
+
+      
+      
+        <div class="post-nav" id="post-nav-id">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/myblog/mac/2018/04/06/Mac%E4%B8%8A%E8%A7%A3%E5%8E%8B%E5%92%8C%E5%8E%8B%E7%BC%A9%E6%96%B9%E6%A1%88/" rel="next" title="Mac上解压缩方案">
+                <i class="fa fa-chevron-left"></i> Mac上解压缩方案
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+      
+
+      
+    </footer>
+  </article>
+
+  <div class="post-spread">
+    
+  </div>
+</div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+        
+        
+        
+
+
+
+
+
+
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/myblog/assets/images/avatar.png"
+               alt="chlsix" />
+          <p class="site-author-name" itemprop="name">chlsix</p>
+           
+              <p class="site-description motion-element" itemprop="description">不徐不疾，不烦不燥，得不足喜，失不足忧</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/myblog/archives/">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/myblog/categories/">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/myblog/tags/">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+        
+        
+          <div class="feed-link motion-element">
+            <a href="/myblog/atom.xml" rel="alternate">
+              <i class="fa fa-rss"></i>
+              RSS
+            </a>
+          </div>
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+
+
+
+
+
+
+
+            
+              <div class="post-toc-content">
+    <ol class=nav>
+      <li class="nav-item nav-level-1"> <a class="nav-link" href="#引言"> <span class="nav-number">1</span> <span class="nav-text">引言</span> </a> </li> <li class="nav-item nav-level-1"> <a class="nav-link" href="#设置appicon"> <span class="nav-number">2</span> <span class="nav-text">设置AppIcon</span> </a> <ol class="nav-child"> <li class="nav-item nav-level-2"> <a class="nav-link" href="#1-appicon尺寸"> <span class="nav-number">2.1</span> <span class="nav-text">1. AppIcon尺寸</span> </a> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#2-添加appicon"> <span class="nav-number">2.2</span> <span class="nav-text">2. 添加AppIcon</span> </a> </li> </ol> </li> <li class="nav-item nav-level-1"> <a class="nav-link" href="#设置launchimage"> <span class="nav-number">3</span> <span class="nav-text">设置LaunchImage</span> </a> <ol class="nav-child"> <li class="nav-item nav-level-2"> <a class="nav-link" href="#1-launchimage尺寸"> <span class="nav-number">3.1</span> <span class="nav-text">1. LaunchImage尺寸</span> </a> </li> <li class="nav-item nav-level-2"> <a class="nav-link" href="#2-添加launchimage"> <span class="nav-number">3.2</span> <span class="nav-text">2. 添加LaunchImage</span> </a> </li> </ol> </li>
+    </ol>
+  </div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  
+  &copy; 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">chlsix</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://jekyllrb.com">Jekyll</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/simpleyyt/jekyll-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+   
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/myblog/assets/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/myblog/assets/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/myblog/assets/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/myblog/assets/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/myblog/assets/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  
+  
+  
+  
+  <script type="text/javascript" src="/myblog/assets/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/myblog/assets/js/src/utils.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/myblog/assets/js/src/motion.js?v=5.1.1"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/myblog/assets/js/src/affix.js?v=5.1.1"></script>
+
+  <script type="text/javascript" src="/myblog/assets/js/src/schemes/pisces.js?v=5.1.1"></script>
+
+
+
+  <script type="text/javascript" src="/myblog/assets/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/myblog/assets/js/src/post-details.js?v=5.1.1"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/myblog/assets/js/src/bootstrap.js?v=5.1.1"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+    
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+  
+
+  
+  
+
+
+  
+
+  
+
+  
+
+</body>
+</html>
+
