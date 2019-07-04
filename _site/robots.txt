@@ -1,1 +1,1 @@
-Sitemap: /chlsix/sitemap.xml
+Sitemap: /sitemap.xml
